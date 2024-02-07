@@ -1,0 +1,161 @@
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~
+$ cd s
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git merge new-feature1
+merge: new-feature1 - not something we can merge
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git merge new-feature1
+merge: new-feature1 - not something we can merge
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   css
+        new file:   fonts
+        new file:   img
+        new file:   index.html
+        new file:   sample-project/css/site.css
+        new file:   sample-project/fonts/segoeuil.ttf
+        new file:   sample-project/img/cloneWhite.svg
+        new file:   sample-project/img/deployWhite.svg
+        new file:   sample-project/img/lightbulbWhite.svg
+        new file:   sample-project/img/stackWhite.svg
+        new file:   sample-project/img/successCloudNew.svg
+        new file:   sample-project/img/tweetThis.svg
+        new file:   sample-project/index.html
+        new file:   sample-project/sample-project/css/site.css
+        new file:   sample-project/sample-project/fonts/segoeuil.ttf
+        new file:   sample-project/sample-project/img/cloneWhite.svg
+        new file:   sample-project/sample-project/img/deployWhite.svg
+        new file:   sample-project/sample-project/img/lightbulbWhite.svg
+        new file:   sample-project/sample-project/img/stackWhite.svg
+        new file:   sample-project/sample-project/img/successCloudNew.svg
+        new file:   sample-project/sample-project/img/tweetThis.svg
+        new file:   sample-project/sample-project/index.html
+        new file:   touch
+
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git commit -a -m "msg"
+[master (root-commit) 091715f] msg
+ 23 files changed, 396 insertions(+)
+ create mode 100644 css
+ create mode 100644 fonts
+ create mode 100644 img
+ create mode 100644 index.html
+ create mode 100644 sample-project/css/site.css
+ create mode 100644 sample-project/fonts/segoeuil.ttf
+ create mode 100644 sample-project/img/cloneWhite.svg
+ create mode 100644 sample-project/img/deployWhite.svg
+ create mode 100644 sample-project/img/lightbulbWhite.svg
+ create mode 100644 sample-project/img/stackWhite.svg
+ create mode 100644 sample-project/img/successCloudNew.svg
+ create mode 100644 sample-project/img/tweetThis.svg
+ create mode 100644 sample-project/index.html
+ create mode 100644 sample-project/sample-project/css/site.css
+ create mode 100644 sample-project/sample-project/fonts/segoeuil.ttf
+ create mode 100644 sample-project/sample-project/img/cloneWhite.svg
+ create mode 100644 sample-project/sample-project/img/deployWhite.svg
+ create mode 100644 sample-project/sample-project/img/lightbulbWhite.svg
+ create mode 100644 sample-project/sample-project/img/stackWhite.svg
+ create mode 100644 sample-project/sample-project/img/successCloudNew.svg
+ create mode 100644 sample-project/sample-project/img/tweetThis.svg
+ create mode 100644 sample-project/sample-project/index.html
+ create mode 100644 touch
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git log
+commit 091715fb10e2bcc368a177e9dbc1aa4db59363df (HEAD -> master)
+Author: sappuswapna1011@gmail.com <sappuswapna1011@gmail.com>
+Date:   Wed Feb 7 19:55:04 2024 +0530
+
+    msg
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git config --global user.username Swapna167
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git remote  add origin https://github.com/Swapna167/ass1.git
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git push -u origin master
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (17/17), 460.60 KiB | 9.40 MiB/s, done.
+Total 17 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Swapna167/ass1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git log
+commit 091715fb10e2bcc368a177e9dbc1aa4db59363df (HEAD -> master, origin/master)
+Author: sappuswapna1011@gmail.com <sappuswapna1011@gmail.com>
+Date:   Wed Feb 7 19:55:04 2024 +0530
+
+    msg
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git remote  add origin https://github.com/Swapna167/ass1.git
+error: remote origin already exists.
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git log
+commit 091715fb10e2bcc368a177e9dbc1aa4db59363df (HEAD -> master, origin/master)
+Author: sappuswapna1011@gmail.com <sappuswapna1011@gmail.com>
+Date:   Wed Feb 7 19:55:04 2024 +0530
+
+    msg
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git remote  add origin https://github.com/Swapna167/s1.git
+error: remote origin already exists.
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+Harish@DESKTOP-NDFRCJ0 MINGW64 ~/s (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
